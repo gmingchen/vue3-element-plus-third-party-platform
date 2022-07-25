@@ -1,3 +1,11 @@
+<!--
+ * @Description:
+ * @Author: gumingchen
+ * @Email: 1240235512@qq.com
+ * @Date: 2022-07-14 08:16:03
+ * @LastEditors: gumingchen
+ * @LastEditTime: 2022-07-15 13:20:55
+-->
 <template>
   <div class="layout-container height-full flex-box overflow-auto">
     <Sidebar />
@@ -12,7 +20,6 @@
         <View class="margin-20 flex-item_f-1" transition="left-in-right-out" />
       </template>
     </component>
-    <Websocket />
   </div>
 </template>
 
@@ -26,10 +33,9 @@ import Tabsbar from './components/tabsbar'
 import View from '@/components/view'
 import NavigationActive from './components/navigation/active'
 import NavigationFixed from './components/navigation/fixed'
-import Websocket from './components/websocket'
 
 export default defineComponent({
-  components: { Sidebar, Headbar, Tabsbar, View, NavigationActive, NavigationFixed, Websocket },
+  components: { Sidebar, Headbar, Tabsbar, View, NavigationActive, NavigationFixed },
   setup() {
     const store = useStore()
 

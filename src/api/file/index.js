@@ -10,48 +10,6 @@ import service from '@/utils/request'
 import { parseJson2Param, getApiBaseUrl } from '@/utils'
 
 /**
- * @description: 分页列表
- * @param {*}
- * @return {*}
- * @author: gumingchen
- */
-export function pageApi(params) {
-  return service({
-    url: '/backstage/file/page',
-    method: 'get',
-    params: params
-  })
-}
-
-/**
- * @description: 删除
- * @param {*} params
- * @return {*}
- * @author: gumingchen
- */
-export function delApi(params) {
-  return service({
-    url: '/backstage/file/delete',
-    method: 'post',
-    data: params
-  })
-}
-
-/**
- * @description: 更新配置
- * @param {*}
- * @return {*}
- * @author: gumingchen
- */
-export function updateConfigApi(params) {
-  return service({
-    url: '/backstage/file/update/config',
-    method: 'post',
-    data: params
-  })
-}
-
-/**
  * @description: 上传
  * @param {*}
  * @return {*}
