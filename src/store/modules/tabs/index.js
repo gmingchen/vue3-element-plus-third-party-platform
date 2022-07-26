@@ -72,8 +72,8 @@ export default {
           const tab = {
             value: val,
             menuId: meta.id,
-            title_cn: meta.title_cn,
-            title_en: meta.title_en,
+            title_cn: route.query.customTabs || meta.title_cn,
+            title_en: route.query.customTabs || meta.title_en,
             name: route.name,
             path: route.path,
             query: route.query,

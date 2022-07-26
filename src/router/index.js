@@ -163,7 +163,7 @@ function clearRouter() {
 
 router.beforeEach(async (to, _from, next) => {
   // 标题控制
-  document.title = to.meta.title_cn || document.title
+  document.title = to.query.customTabs || to.meta.title_cn || document.title
   // 跳转到登录页如果 token 还未过期则调整到系统内部
   if (to.name === 'login') {
     const { expired_at } = store.state.administrator.token

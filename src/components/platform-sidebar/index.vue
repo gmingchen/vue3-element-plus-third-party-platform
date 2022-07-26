@@ -1,5 +1,5 @@
 <template>
-  <div class="enterprise-sidebar-container height-full width-300 flex-box flex_d-column">
+  <div class="enterprise-sidebar-container height-full width-200 flex-box flex_d-column">
     <el-input class="margin_b-10" v-model="form.name" @keyup.enter="reacquireHandle()">
       <template #suffix>
         <Iconfont name="search" />

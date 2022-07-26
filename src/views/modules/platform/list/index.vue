@@ -239,3 +239,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+::v-deep(.el-descriptions__content) {
+  word-break: break-all;
+}
+</style>

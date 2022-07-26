@@ -9,8 +9,7 @@
           <el-input v-model="form.keyword" placeholder="版本号 / AppId / 名称" clearable />
         </el-form-item>
         <el-form-item>
-          <el-select v-model="form.type">
-            <el-option label="全部" value="" />
+          <el-select v-model="form.type" placeholder="模版类型" clearable>
             <el-option
               v-for="item in dictionaryList"
               :key="item.value"
